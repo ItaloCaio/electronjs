@@ -1,0 +1,114 @@
+/* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+#icones{
+    margin-top: 10px;
+    margin-right: 3px;
+    margin-bottom: 15px;
+    margin-left: 3px;
+
+
+}
+#primary{
+  background: #5c6bc0;
+}
+#light{
+   background: #8e99f3;
+}
+#dark{
+   background: #26418f;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer; 
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg); 
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+#conteudo-left{
+  /*Novamente definimos a largura da div*/
+  width:450px;
+  /* altura da div */
+  height:800px;
+  /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+  float:left;
+  /* Cor de fundo da div */
+  background-color:#0000;
+
+  border-width: thin;
+  border-style: solid;
+  border-color: #FFFF;
+  border-right: 0px;
+
+  padding: 3px;
+  }
+#conteudo-right{
+  /*Novamente definimos a largura da div*/
+  width:275px;
+  /* altura da div */
+  height:800px;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px, 
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float:left;
+  /* Cor de fundo da div */
+
+  background: #0000;
+  border-width: thin;
+  border-style: solid;
+  border-color: #FFFF;
+ 
+  }
+#conteudo-mid{
+   width:275px;
+  /* altura da div */
+  height:800px;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px, 
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float:left;
+  /* Cor de fundo da div */
+
+  background: #0000;
+  border-width: thin;
+  border-style: solid;
+  border-color: #FFFF;
+
+}
+  #conteudo{
+
+  /*Novamente definimos a largura da div*/
+  width:1000px;
+  /* altura da div */
+  height:500px;
+  /* Cor de fundo da div */
+  
+} 

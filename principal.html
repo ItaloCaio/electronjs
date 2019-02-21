@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nutes Project</title>
+   <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/tree.css" rel="stylesheet">
+
+</head>
+<body>
+
+ <!-- menu principal -->
+   <div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Biblioteca de Injeção</a>
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Biblioteca de Volume</a>
+    
+    </div>
+  </div>
+  
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+       
+       <div id=conteudo> 
+        <div id="conteudo-left">
+            <!-- Injeção -->
+                                 
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Biblioteca</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Personalização</a>
+              </li>
+              
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                <!--icones -->
+                  <div >
+                    
+                       
+                        <img id="icones" src="assets/img/biblioteca.png" />
+                        <img id="icones" src="assets/img/save.png" />
+                        <img id="icones" src="assets/img/delete.png" />
+                        <img id="icones" src="assets/img/off.png" />
+                        <img id="icones" src="assets/img/download.png" />
+                        <img id="icones" src="assets/img/upload.png" />
+                     
+                    
+                 </div>
+                <ul id="myUL">
+                  <li><span class="caret"> <img src="assets/img/comp.png"/> Biblioteca Local</span>
+                    <ul class="nested">
+                      
+                      <li><span class="caret">Injectomat</span>
+                        <ul class="nested">
+                          <li><img src="assets/img/add.png" />  ICU</li>
+                          
+                          
+                        </ul>
+                      </li>
+                      <li><span class="caret">Injectomat MC</span>
+                        <ul class="nested">
+                          <li><img src="assets/img/add.png" />  ICU2</li>
+                        </ul>
+
+                      </li>
+
+                      <li><span class="caret">Injectomat TIVA</span>
+                        <ul class="nested">
+                         <li><img src="assets/img/add.png" />  Drog</li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </li>
+                  <li><span class="caret"><img src="assets/img/trash.png"/> Lixeira</span>
+                    <ul class="nested">
+                      <li><img src="assets/img/add.png" /> ICU 4</li>
+                      <li><img src="assets/img/add.png" /> ICU 5</li>
+                      
+                    </ul>
+                  </li>
+
+                  <li><span class="caret"><img src="assets/img/devices.png"/> Aparelhos Conectados</span>
+                    <ul class="nested">
+                     
+                      
+                    </ul>
+                  </li>
+
+
+                </ul>
+
+              </div>
+              <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lista</div>
+              <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">Personalização</div>
+              
+            </div>                    
+          
+
+          </div>
+          <div id="conteudo-mid">
+
+           
+          </div>
+          <div id="conteudo-right">
+
+           
+          </div>
+
+         
+        </div>
+
+
+      </div>
+
+
+      <!-- outras bibliotecas -->
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
+      
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  
+  
+
+  <script>
+   /* const electron = require('electron');
+    const {ipcRenderer} = electron;
+
+    document.querySelector('form').addEventListener('submit', submitForm);
+
+    function submitForm(e){
+      e.preventDefault();
+      const item = document.querySelector('#item').value;
+      console.log(ipcRenderer);
+      ipcRenderer.send('item:add', item);
+    }
+
+*/
+    //tree
+
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+  </script>
+
+
+</body>
+</html>
